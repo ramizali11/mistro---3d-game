@@ -13,6 +13,23 @@ I Made A Game With Python Using The Module Ursina To Understand And Practice The
 9. Island Structure: I Created Structure Like Ruins And Buldings (Explain It Later)
 10. Player & Control: First-person perspective, WASD movemnet, mouse look, jumps & gravity handled
 
-#game overview image
+# game overview image
 
 <img width="1311" height="838" alt="image" src="https://github.com/user-attachments/assets/7dd16d36-f5f6-41b0-98ec-21670826af25" />
+
+# Biggest Problem I Faced
+
+1. Fall Demage: As I Had No Idea, I First Made The Logic Like Safe_fall = 5, land_y = 2, fall_s_y = detect the ground, total_distance = fall_s_y - player.y, if total_distancxe >= safe_fall demage(int( total_distance * land_y)), so the fall_s_y lock the value whne player do not have ground under him/her then i subtract the fall_s_y with current player.y so the distance come then i check it is lower or higher then the safe_fall, if higher i call the demage
+  
+2. Structure: so for the structure i visit many software but that it need much more exprience and learing, so building map in the firstperson perspective was much easy but no soft provide it or i did not found one, then what to do so i thought i will save the coordinates and textures of the entity in one file called map.txt and then load it in the main then i created four function placeblock: place the entity removeblock: remove the entity save_map: save the coordinatas and texture load_map: load the map after completing map the first three function were not needable so i comment it out so in future i will use it when i need or anyone else need it
+3. FPS: it weas the biggest problem i face i did not solve it but add the game properties and entity properties to incresse the fps as the real solution needs more time and knowledge but as i am not going to the gaming industry i did not do chunk and other method
+4. enemy: i created enemy but i had no idea about the behavior so i created the logic and try to implement nit worked but no fully sometime enemy will behave weirdly like flying facing other and stuff i used chatgpt but it was no use
+
+# what i learn
+
+i learn more about the oops concept with python as i have separated file for game eample: gun.py, enemy,py ,health.py ect so calling the function which is in another file otherthan the main was kinda a tricky because as i thoung i just need to import the file in another file and just call the function after initilization but sometime somethings won't happen as we planned it was throwing error so i research about it and found cross-module method invocation and use it and it worked and i learn functions of the ursina and the core object of the coding logic building
+
+# installation
+so how to install it and play it
+1. install ursina - pip install ursina
+2. then run the game 
