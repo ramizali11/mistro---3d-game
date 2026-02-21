@@ -32,4 +32,6 @@ i learn more about the oops concept with python as i have separated file for gam
 # installation
 so how to install it and play it
 1. install ursina - pip install ursina
-2. then run the game 
+2. then run the game
+3. to exited the game click esc
+
